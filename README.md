@@ -58,3 +58,12 @@ import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
 const geojson = jaPrefs().getGeoJSON()
 console.log(geojson) // GeoJSON of Japanese prefectures
 ```
+
+To get layer json for `style.json`:
+
+```node
+import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
+
+const layer = jaPrefs().getLayer()
+console.log(layer) // Layer JSON
+```
