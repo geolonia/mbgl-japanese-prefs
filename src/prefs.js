@@ -1,4 +1,4 @@
-[
+const Prefs = [
   {
     "name": "北海道",
     "en": "Hokkaido",
@@ -329,3 +329,5 @@
     "code": "47"
   }
 ]
+
+export default Prefs

@@ -1,6 +1,6 @@
 'use strict'
 
-const prefs = require('./todofuken.json')
+import Prefs from './prefs.js'
 
 class JaPrefs {
   constructor(options) {
@@ -23,18 +23,18 @@ class JaPrefs {
       features: []
     };
 
-    for (let i = 0; i < prefs.length; i++) {
+    for (let i = 0; i < Prefs.length; i++) {
       const props = Object.assign({
         name: "",
         en: "",
         code: "",
-      }, prefs[i])
+      }, Prefs[i])
 
       this.geojson.features.push({
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [prefs[i].lng, prefs[i].lat]
+          coordinates: [Prefs[i].lng, Prefs[i].lat]
         },
         properties: props
       })
