@@ -45,7 +45,7 @@ new jaPrefs({
   maxzoom: 9,
   textFont: ['Noto Sans Regular'],
   textSize: 14,
-  before: "", // The ID of an existing layer to insert the new layer before. 
+  before: "", // The ID of an existing layer to insert the new layer before.
 }).addTo(map)
 ```
 
@@ -56,7 +56,7 @@ To get GeoJSON, you can do as follows.
 ```node
 import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
 
-const geojson = jaPrefs().getGeoJSON()
+const geojson = new jaPrefs().getGeoJSON()
 console.log(geojson) // GeoJSON of Japanese prefectures
 ```
 
@@ -65,6 +65,6 @@ To get layer json for `style.json`:
 ```node
 import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
 
-const layer = jaPrefs().getLayer()
+const layer = new jaPrefs().getLayer()
 console.log(layer) // Layer JSON
 ```
