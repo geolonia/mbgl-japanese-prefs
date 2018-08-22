@@ -62,7 +62,7 @@ class JaPrefs {
         "text-field": this.options.label,
         "text-font": this.options.textFont,
         "text-size": this.options.textSize,
-        "text-anchor": "top",
+        "text-anchor": "center",
         "text-max-width": 10,
         "text-offset": [0, 0],
         "text-allow-overlap": false,
