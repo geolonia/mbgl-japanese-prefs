@@ -21,7 +21,7 @@ Then:
 
 ```node
 import 'babel-polyfill' // For ie11
-import JaPrefs from '../src'
+import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
 
 const map = new mapboxgl.Map({
   container: 'map',
@@ -32,13 +32,13 @@ const map = new mapboxgl.Map({
   interactive: true
 });
 
-new JaPrefs().addTo(map)
+new jaPrefs().addTo(map)
 ```
 
 ## Options
 
 ```node
-new JaPrefs({
+new jaPrefs({
   id: "japanese-prefectures",
   label: "{en}\n{name}",
   minzoom: 0,
@@ -46,4 +46,13 @@ new JaPrefs({
   textFont: ['Noto Sans Regular'],
   textSize: 14,
 }).addTo(map)
+```
+
+## Internal API
+
+```
+import jaPrefs from '@tilecloud/mbgl-japanese-prefs
+
+const geojson = jaPrefs().getGeoJSON()
+console.log(geojson) // GeoJSON of Japanese prefectures
 ```
