@@ -53,7 +53,7 @@ new jaPrefs({
 To get GeoJSON, you can do as follows.
 
 ```node
-import jaPrefs from '@tilecloud/mbgl-japanese-prefs
+import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
 
 const geojson = jaPrefs().getGeoJSON()
 console.log(geojson) // GeoJSON of Japanese prefectures
