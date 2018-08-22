@@ -1,5 +1,8 @@
 # @tilecloud/mbgl-japanese-prefs
 
+[![Build Status](https://travis-ci.org/tilecloud/mbgl-japanese-prefs.svg?branch=master)](https://travis-ci.org/tilecloud/mbgl-japanese-prefs)
+[![npm version](https://badge.fury.io/js/%40tilecloud%2Fmbgl-japanese-prefs.svg)](https://badge.fury.io/js/%40tilecloud%2Fmbgl-japanese-prefs)
+
 Displays Japanese Prefectures on OpenMapTiles based map.
 
 ![](https://www.evernote.com/l/ABWnbE4DWjVMIZtXY-5aKm1T8UIFLQWIuQ8B/image.png)
