@@ -10,7 +10,7 @@ https://tilecloud.github.io/mbgl-japanese-prefs/#5/35.69/139.69
 
 ## How to use
 
-```
+```node
 import 'babel-polyfill' // For ie11
 import JaPrefs from '../src'
 
@@ -28,7 +28,7 @@ new JaPrefs().addTo(map)
 
 ## Options
 
-```
+```node
 new JaPrefs({
   id: "japanese-prefectures",
   minzoom: 0,
