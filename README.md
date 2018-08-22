@@ -50,7 +50,9 @@ new jaPrefs({
 
 ## Internal API
 
-```
+To get GeoJSON, you can do as follows.
+
+```node
 import jaPrefs from '@tilecloud/mbgl-japanese-prefs
 
 const geojson = jaPrefs().getGeoJSON()
