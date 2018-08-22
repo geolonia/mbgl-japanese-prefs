@@ -15,6 +15,7 @@ class JaPrefs {
         maxzoom: 9,
         textFont: ['Noto Sans Regular'],
         textSize: 14,
+        before: "",
       }, options
     )
 
@@ -76,7 +77,7 @@ class JaPrefs {
         data: this.geojson,
       })
 
-      map.addLayer(this.getLayer());
+      map.addLayer(this.getLayer(), this.options.before);
     })
   }
 }

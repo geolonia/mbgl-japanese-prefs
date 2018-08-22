@@ -45,6 +45,7 @@ new jaPrefs({
   maxzoom: 9,
   textFont: ['Noto Sans Regular'],
   textSize: 14,
+  before: "", // The ID of an existing layer to insert the new layer before. 
 }).addTo(map)
 ```
 

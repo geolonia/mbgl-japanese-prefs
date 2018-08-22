@@ -20,4 +20,4 @@ map.addControl(new ForkMeConntrol({
   url: 'https://github.com/tilecloud/mbgl-japanese-prefs',
 }));
 
-new JaPrefs().addTo(map)
+new JaPrefs({before: "place_country_other"}).addTo(map)
