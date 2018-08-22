@@ -40,6 +40,7 @@ new JaPrefs().addTo(map)
 ```node
 new JaPrefs({
   id: "japanese-prefectures",
+  label: "{en}\n{name}",
   minzoom: 0,
   maxzoom: 9,
   textFont: ['Noto Sans Regular'],

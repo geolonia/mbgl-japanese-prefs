@@ -10,6 +10,7 @@ class JaPrefs {
 
     this.options = Object.assign({
         id: "japanese-prefectures",
+        label: "{en}\n{name}",
         minzoom: 0,
         maxzoom: 9,
         textFont: ['Noto Sans Regular'],
@@ -59,7 +60,7 @@ class JaPrefs {
           "text-halo-width": 2,
         },
         "layout": {
-          "text-field": "{en}\n{name}",
+          "text-field": this.options.label,
           "text-font": this.options.textFont,
           "text-size": this.options.textSize,
           "text-anchor": "top",
