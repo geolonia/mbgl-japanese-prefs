@@ -41,6 +41,10 @@ class JaPrefs {
     }
   }
 
+  getGeoJSON() {
+    return this.geojson
+  }
+
   addTo(map) {
     map.on('load', () => {
       map.addSource(this.options.id, {
