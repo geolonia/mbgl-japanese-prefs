@@ -10,6 +10,12 @@ https://tilecloud.github.io/mbgl-japanese-prefs/#5/35.69/139.69
 
 ## How to use
 
+```bash
+$ npm install @tilecloud/mbgl-japanese-prefs --save
+```
+
+Then:
+
 ```node
 import 'babel-polyfill' // For ie11
 import JaPrefs from '../src'
