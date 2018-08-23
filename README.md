@@ -40,7 +40,7 @@ new jaPrefs().addTo(map)
 ```node
 new jaPrefs({
   id: "japanese-prefectures",
-  textFiled: "{name:latin}\n{name:nonlatin}",
+  textFiled: "{name:latin}\n{name:ja}",
   minzoom: 0,
   maxzoom: 9,
   textFont: ['Noto Sans Regular'],

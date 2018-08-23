@@ -12,7 +12,7 @@ class JaPrefs {
         id: "japanese-prefectures",
         minzoom: 0,
         maxzoom: 9,
-        textField: "{name:latin}\n{name:nonlatin}",
+        textField: "{name:latin}\n{name:ja}",
         textFont: ['Noto Sans Regular'],
         textSize: 14,
         before: "",
@@ -27,9 +27,11 @@ class JaPrefs {
     for (let i = 0; i < Prefs.length; i++) {
       const props = {
         "name": Prefs[i].name,
-        "name:latin": Prefs[i].en,
+        "name:ja": Prefs[i].name,
         "name:nonlatin": Prefs[i].name,
-        "code": "",
+        "name:latin": Prefs[i].en,
+        "name:en": Prefs[i].en,
+        "code": Prefs[i].code,
       }
 
       this.geojson.features.push({
