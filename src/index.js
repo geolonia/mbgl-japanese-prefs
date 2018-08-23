@@ -10,9 +10,9 @@ class JaPrefs {
 
     this.options = Object.assign({
         id: "japanese-prefectures",
-        label: "{en}\n{name}",
         minzoom: 0,
         maxzoom: 9,
+        textField: "{name:latin}\n{name:nonlatin}",
         textFont: ['Noto Sans Regular'],
         textSize: 14,
         before: "",
@@ -25,11 +25,12 @@ class JaPrefs {
     };
 
     for (let i = 0; i < Prefs.length; i++) {
-      const props = Object.assign({
-        name: "",
-        en: "",
-        code: "",
-      }, Prefs[i])
+      const props = {
+        "name": Prefs[i].name,
+        "name:latin": Prefs[i].en,
+        "name:nonlatin": Prefs[i].name,
+        "code": "",
+      }
 
       this.geojson.features.push({
         type: 'Feature',
@@ -59,7 +60,7 @@ class JaPrefs {
         "text-halo-width": 2,
       },
       "layout": {
-        "text-field": this.options.label,
+        "text-field": this.options.textField,
         "text-font": this.options.textFont,
         "text-size": this.options.textSize,
         "text-anchor": "center",
