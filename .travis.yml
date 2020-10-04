@@ -8,8 +8,8 @@ branches:
   - master
   - "/^v?[0-9\\.]+/"
 node_js:
-- '8'
 - '10'
+- '12'
 deploy:
   provider: npm
   email: hatatatehaze@gmail.com
