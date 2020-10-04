@@ -1,7 +1,7 @@
-# @tilecloud/mbgl-japanese-prefs
+# @geolonia/mbgl-japanese-prefs
 
-[![Build Status](https://travis-ci.org/tilecloud/mbgl-japanese-prefs.svg?branch=master)](https://travis-ci.org/tilecloud/mbgl-japanese-prefs)
-[![npm version](https://badge.fury.io/js/%40tilecloud%2Fmbgl-japanese-prefs.svg)](https://badge.fury.io/js/%40tilecloud%2Fmbgl-japanese-prefs)
+[![Build Status](https://travis-ci.org/geolonia/mbgl-japanese-prefs.svg?branch=master)](https://travis-ci.org/geolonia/mbgl-japanese-prefs)
+[![npm version](https://badge.fury.io/js/%40geolonia%2Fmbgl-japanese-prefs.svg)](https://badge.fury.io/js/%40geolonia%2Fmbgl-japanese-prefs)
 
 Displays Japanese Prefectures on OpenMapTiles based map.
 
@@ -9,23 +9,23 @@ Displays Japanese Prefectures on OpenMapTiles based map.
 
 ## DEMO
 
-https://tilecloud.github.io/mbgl-japanese-prefs/#5/35.69/139.69
+https://geolonia.github.io/mbgl-japanese-prefs/#5/35.69/139.69
 
 ## How to use
 
 ```bash
-$ npm install @tilecloud/mbgl-japanese-prefs --save
+$ npm install @geolonia/mbgl-japanese-prefs --save
 ```
 
 Then:
 
 ```node
 import 'babel-polyfill' // For ie11
-import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
+import jaPrefs from '@geolonia/mbgl-japanese-prefs'
 
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'https://tilecloud.github.io/tiny-tileserver/style.json',
+  style: 'https://geolonia.github.io/tiny-tileserver/style.json',
   attributionControl: true,
   hash: true,
   localIdeographFontFamily: "sans-serif",
@@ -54,7 +54,7 @@ new jaPrefs({
 To get GeoJSON, you can do as follows.
 
 ```node
-import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
+import jaPrefs from '@geolonia/mbgl-japanese-prefs'
 
 const geojson = new jaPrefs().getGeoJSON()
 console.log(geojson) // GeoJSON of Japanese prefectures
@@ -63,7 +63,7 @@ console.log(geojson) // GeoJSON of Japanese prefectures
 To get layer json for `style.json`:
 
 ```node
-import jaPrefs from '@tilecloud/mbgl-japanese-prefs'
+import jaPrefs from '@geolonia/mbgl-japanese-prefs'
 
 const layer = new jaPrefs().getLayer()
 console.log(layer) // Layer JSON
