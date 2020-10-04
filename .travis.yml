@@ -18,5 +18,5 @@ deploy:
   on:
     branch: master
     tags: true
-    repo: tilecloud/mbgl-japanese-prefs
+    repo: geolonia/mbgl-japanese-prefs
   skip_cleanup: true
